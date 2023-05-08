@@ -1,0 +1,193 @@
+.tech-container{
+    margin-top:0px;
+    left:0px;
+}
+.tech-background{
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    max-height: 100vh;
+    height: 100vh ;
+    z-index: -1;
+}
+.tech-mobilebackground{
+    display: none;
+}
+.pick-box-tech{
+    display: flex;
+    margin-top:-480px;
+    margin-left: 145px;
+    color:  rgb(177, 171, 171);
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.tech-circle-box{
+    margin-top: 80px;
+    margin-left: 140px;
+    display: inline-block;
+
+}
+.tech-circle{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: none;
+    margin-bottom: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(190, 187, 187);
+    cursor: pointer;
+}
+.circle-fill{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: white;
+    margin-bottom: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(190, 187, 187);
+    cursor: pointer;
+}
+.tech-circle:active{
+    background-color: white;
+}
+.tech-num{
+   text-align: center;
+   padding-top: 15px;
+   font-size: 30px;
+}
+.tech-details{
+    margin-left: 280px;
+    margin-top: -270px;
+    width: 40%;
+}
+.term{
+    font-size:15px;
+    margin-bottom: 10px;
+    color:rgb(151, 142, 142) ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.launch{
+    font-size:40px;
+    margin-bottom: 20px;
+    color:white ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.tech-content{
+    width: 61%;
+    margin-bottom: 20px;
+    color: rgb(151, 142, 142) ;
+    line-height: 25px;
+}
+.tech-img-box{
+   margin-left: 673px;
+    margin-top: -350px;
+
+}
+.tech-img{
+    width: 380px;
+    height: 400px;
+}
+@media screen and (max-width: 450px) {
+
+    .tech-background{
+        display: none;
+    }
+    .tech-mobilebackground{
+        display: inline-block;
+            width: 100%; 
+             height: 100vh;
+            top: 0;
+            left: 0px;
+            position: fixed;
+            margin-top: -90px;
+            z-index: -1;
+    }
+    .pick-box-tech{
+        display: flex;
+        margin-top:10px;
+        margin-left: 105px;
+        color:  rgb(177, 171, 171);
+        font-size: larger;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .tech-circle-box{
+        margin-top: 30px;
+        /* margin-left: 70px; */
+        display: flex;
+        margin-inline: 50px;
+        justify-content: space-between;
+        
+    
+    }
+    .tech-circle{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: none;
+        margin-bottom: 20px;
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid rgb(190, 187, 187);
+        cursor: pointer;
+    }
+    .tech-details{
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+    }
+    .tech-content{
+        width: 80%;
+        text-align: center;
+        margin-left: 40px;
+    }
+    .tech-img-box{
+        margin-left: -20px;
+         margin-top: 30px;
+     
+     }
+     .tech-img{
+         width: 220px;
+         height: 220px;
+     }
+}
+@media screen and (max-width: 350px) {
+    .tech-img-box{
+        margin-left: -20px;
+         margin-top: 10px;
+     
+     }
+     .tech-img{
+         width: 190px;
+         height: 190px;
+     }
+     .tech-details{
+        margin-left: 0px;
+        margin-top: 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .tech-circle-box{
+        margin-top: 480px;
+    }
+    .tech-circle{
+        width: 70px;
+        height:70px;
+    }
+    .launch{
+        font-size:30px;
+        margin-bottom: 20px;
+        color:white ;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .tech-content{
+        width: 90%;
+        text-align: center;
+        margin-left: 10px;
+    }
+}
