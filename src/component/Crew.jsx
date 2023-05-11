@@ -69,16 +69,15 @@ function Crew() {
         </div>
 
         <div className="crew-details">
-              {/* { crew && <CrewMap crew={crew}/>} */}
               <div className="occupation">{role[crew]}</div>
               <div className="crew-name">{crew_name()}</div>
         
+        </div>
         <div className="circle-box" >
           <div className="circle onee" onClick={handleCommander} ></div>
           <div className="circle two"  onClick={handleMission}></div>
           <div className="circle three"  onClick={handlePilot}></div>
           <div className="circle four"  onClick={handleFlight}></div>
-        </div>
         </div>
 
         

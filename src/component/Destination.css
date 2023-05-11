@@ -1,12 +1,16 @@
+*{
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
 .container-destination{
     margin-top:0px;
     left:0px;
-    /* position: relative; */
-    
   }
 .destination-background{
     position: relative;
     max-width: 100%;
+    position: fixed;
     width: 100%;
     max-height: 100vh;
     height: 100vh ;
@@ -18,40 +22,48 @@
 .destination-tabletbackground{
     display: none;
 }
-.pick-box{
+ .pick-box{
     display: flex;
-    margin-top:-480px;
+    margin-top:180px;
     margin-left: 145px;
-    color:  rgb(177, 171, 171);
+    color:  rgb(160, 157, 157);
     cursor: pointer;
     font-size: larger;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 .one{
     margin-inline-end: 20px;
     color: rgb(104, 101, 101); 
 }
 .img-box{
-    margin-left: -500px;
-    margin-top: -130px;
+    width:25% ;
+    height: 48vh;
+    margin-left: 220px;
+    margin-top: 260px;
     position: absolute;
+    justify-content: center;
     cursor: pointer;
 }
 .image{
-    width: 330px;
-    height: 330px;
+    width: 300px;
+    height: 300px;
+    margin-top: 10px;
+    margin-left: 20px;
 }
+
 .planet-details{
-    position: relative;
     float: right;
     margin-top: 50px;
-    width: 600px;
+    margin-right:200px ;
+    width: 400px;
     height: 50vh;
+    
 }
 .planet-option ul{
     display: flex;
     list-style: none;
-    margin-left: -45px;
+    margin-left: 0px;
     cursor: pointer;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -62,67 +74,68 @@
     cursor: pointer;
 }
 .hrMars{
-    width: 7%;
+    width: 10%;
     height: 0.1vh;
     background-color: white;
-    margin-top: -10px;
-    margin-left: 60px;
+    margin-top: 0px;
+    margin-left: 65px;
 }
  .hrMars2{
     display: none;
 } 
  .hrMoon{
-    width: 7%;
-    height: 0.2vh;
+    width: 10%;
+    height: 0.1vh;
     background-color: white;
-    margin-top: -10px;
-    margin-left: 0px;
+    margin-top: 0px;
+    margin-left: 10px;
 }
 .hrMoon2{
     display: none;
 } 
 .hrEuropa{
-    width: 8%;
+    width: 13%;
     height: 0.1vh;
     background-color: white;
-    margin-top: -12px;
-    margin-left: 120px;
+    margin-top: 0px;
+    margin-left: 125px;
 } 
  .hrEuropa2{
     display: none;
 }
 .hrTitan{
-    width: 7%;
-    height: 0.15vh;
+    width: 10%;
+    height: 0.1vh;
     background-color: white;
-    margin-top: -10px;
-    margin-left: 190px;
+    margin-top: 0px;
+    margin-left: 195px;
 }
 .hrTitan2{
     display: none;
 } 
+
 .planet-name{
     font-size: 85px;
     margin-top: 10px;
     color: white;
-    cursor: pointer;
 }
 .destination-details{
     margin-top: -10px;
-    /* position: absolute; */
+ 
 }
 .planet-content{
-    width: 60%;
+    width: 100%;
     margin-top: 10px;
     color: rgb(151, 142, 142);
     line-height: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .planet-line{
-    width: 60%;
+    width: 100%;
     margin-top: 30px;
     margin-left: 0px;
 }
+
 .plan{
     color: rgb(105, 103, 103);
     margin-top: 25px;
@@ -153,300 +166,346 @@
 .travel-time{
     color: rgb(226, 215, 215);
 }
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1280px){
+    .img-box{
+        margin-left: 160px;
+    }
     .planet-details{
-        margin-right: -180px;
+        margin-right:150px ;       
     }
 }
-@media screen and (max-width:980px) {
-    .image{
-        width: 270px;
-        height: 270px;
-    }
+@media screen and (max-width:1280px){
     .img-box{
-        margin-left: -450px;
-        margin-top: -100px;
+        margin-left: 110px;
     }
-    .planet-name{
-        font-size: 65px;
-       
+    .planet-details{
+        margin-right:110px ;       
     }
 }
-@media screen and (max-width:930px){
-    .planet-name{
-        font-size: 65px;
-       
-    }
-    .image{
-        width: 250px;
-        height: 250px;
-    }
+
+@media screen and (max-width:1024px) {
     .img-box{
-        margin-left: -420px;
-        margin-top: -80px;
+        margin-left: 70px;
     }
-} 
-.image{
-        width: 270px;
-        height: 270px;
+    .planet-details{
+        margin-right:20px ;       
     }
+}
+@media screen and (max-width:900px) {
     .img-box{
-        margin-left: -450px;
-        margin-top: -100px;
+        margin-left: 20px;
     }
-    @media screen and (max-width:880px){
-        .img-box{
-            margin-left: -360px;
-            margin-top: -100px;
-        }
-        .planet-name{
-            font-size: 55px;
-            margin-top: 0px;
-        }
-        .planet-content{
-            width: 55%;
-            font-size: 14px;
-            margin-top: 10px;
-            
-        }
-        .planet-line{
-            width: 55%;
-            margin-top: 10px;
-        }
+    .planet-details{
+        margin-right:20px ;       
     }
-    @media screen and (max-width: 850px) {
-        .img-box{
-            margin-left: -310px;
-            margin-top: -40px;
-        }
-        .image{
-            width: 220px;
-            height: 220px;
-        }
+    .pick-box{
+        margin-left: 65px;
     }
+}
+
     @media screen and (max-width: 768px) {
         .destination-background{
             display: none;
         }
         .destination-tabletbackground{
             display: inline-block;
+            position: relative;
             max-width: 100%;
+            position: fixed;
             width: 100%;
             max-height: 100vh;
-            height: 100vh;
+            height: 100vh ;
+            z-index: -1;
         }
+        .container-destination{
+            margin-top:0px;
+            left:0px;
+            text-align: center;
+          }
         .img-box{
-            margin-left: -300px;
-            margin-top: -40px;
+            margin-left: 250px;
+            margin-top: 750px;
         }
         .image{
             width: 200px;
             height: 200px;
         }
-        .planet-details{
-            position: relative;
-            float: right;
-            margin-top: 0px;
-            width: 600px;
-            height: 50vh;
-            margin-right: -200px;
+        .pick-box{
+            margin-left: 85px;
+            margin-top: 170px;
         }
-        .pick{
-            margin-top: 100px;
-            margin-left:0px
-        }.one{
-            margin-top: 100px;
-            margin-left:-80px
+        .planet-details{
+            margin-top: 70px;
+            width: 450px;
+            height: 40vh;
+            margin-right: 150px;
+        }
+    
+        .planet-option ul{
+            margin-left: 5px;
+        }
+        .planet-option ul li{
+            margin-inline: 15px;
+            font-size: 25px;
+        }
+        .hrMars{
+            width: 14%;
+            margin-left: 130px;
+        }
+ 
+         .hrMoon{
+            width: 14%;
+            margin-left: 30px;
+        }
+        .hrEuropa{
+            width: 20%;
+            margin-left: 230px;
+        } 
+        .hrTitan{
+            width: 14%;
+            margin-left: 360px;
+        }
+        
+        .planet-name{
+            font-size: 125px;
+            margin-top: 10px;
+            color: white;
+        }
+        .destination-details{
+            margin-top: -10px;
+         
+        }
+        .planet-content{
+            width: 100%;        
+            line-height: 25px;
         }
         .planet-line{
-            width: 50%;
+            width: 90%;
+            margin-top: 30px;
+            margin-left: 25px;
+        }
+        
+        .plan{
+            margin-left: -220px;
+        }
+        .average-distance{
+            font-size:small;
+            
+        }
+        .distance{
+            font-size: 25px;
+            color: rgb(226, 215, 215);
+        }
+        .plan2{
+            margin-top: -50px;
+            margin-left: 200px;
+        }
+        .estimate{
+            font-size: small;
+        }
+        .travel-time{
+            font-size: 25px;
+            color: rgb(226, 215, 215);
         }
     }
-    @media screen and (max-width: 500px) {
-       .destination-tabletbackground{
-           display: inline-block;
-           max-width: 100%;
-           max-height: 140vh;
-           height: 190vh;
-           width: 100%;
-           top: 0;
-           margin-top: 0;
-       }
-       .pick{
-        margin-top: -450px;
-        margin-left:0px
-    }   
-    .one{
-        margin-top: -450px;
-        margin-left:-80px
+    @media screen and (max-width: 720px) {
+        .img-box{
+            margin-left: 250px;
+            margin-top: 750px;
+        }
+        .planet-details{
+            margin-right: 120px;
+        }
     }
-    .planet-details{
-        margin-top: -350px;
-        margin-right: -320px;
-        /* text-align: center; */
+    @media screen and (max-width: 680px) {
+        .img-box{
+            margin-left: 200px;
+            margin-top: 750px;
+        }
+        .planet-details{
+            margin-right: 110px;
+        }
     }
-    .img-box{
-        margin-left: -20px;
-        margin-top: 290px;
-        position: absolute;
-        cursor: pointer;
+    @media screen and (max-width: 620px) {
+        .img-box{
+            margin-left: 200px;
+            margin-top: 750px;
+        }
+        .planet-details{
+            margin-right: 80px;
+        }
     }
-    .image{
-        width: 280px;
-        height: 280px;
+    @media screen and (max-width: 590px) {
+        .img-box{
+            margin-left: 180px;
+            margin-top: 750px;
+        }
+        .planet-details{
+            margin-right: 60px;
+        }
     }
-    .planet-name{
-        font-size: 95px;
-        margin-top: 10px;
-        color: white;
-        cursor: pointer;
-        margin-left: -10px;
+    @media screen and (max-width: 550px) {
+        .img-box{
+            margin-left: 160px;
+            margin-top: 750px;
+        }
+        .planet-details{
+            margin-right: 50px;
+        }
     }
-    .destination-details{
-        margin-top: -10px;
-    }
-    .planet-content{
-        text-align: center;
-        width: 70%;
-        font-size: 22px;
-        margin-top: 10px;
-        margin-left: -80px;
-        color: rgb(151, 142, 142);
-        line-height: 30px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
-    .planet-line{
-        width: 60%;
-        margin-top: 30px;
-        margin-left: -50px;
-    }
-    .plan{
-        color: rgb(105, 103, 103);
-        margin-top: 25px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
-    }
-    .average-distance{
-        font-size: x-small;
-        margin-bottom: 5px;
-        color: rgb(151, 142, 142);;
-        
-    }
-    .distance{
-        color: rgb(226, 215, 215);
-    }
-    .plan2{
-        color: rgb(151, 142, 142);
-        margin-top: -35px;
-        margin-left: 140px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
-    }
-    .estimate{
-        font-size: x-small;
-        margin-bottom: 5px;
-        color: rgb(151, 142, 142);;
-    }
-    .travel-time{
-        color: rgb(226, 215, 215);
-    }
-    }
+
     @media screen and (max-width:450px) {
         
         .destination-phonebackground{
             display: inline-block;
-        width: 100%;
-        height: 100vh;
-        top: 0;
-        left: 0px;
-        position: fixed;
-        margin-top: -90px;
-        z-index: -1;
+            position: relative;
+            position: fixed;
+            max-width: 100%;
+            width: 100%;
+            max-height: 100vh;
+            height: 100vh ;
+            z-index: -1;
     
         }
         .destination-tabletbackground{
             display: none;
         }
-        .img-box{
-            margin-left: 20px;
-            margin-top: 330px;
-            position: absolute;
-            cursor: pointer;
-        }
         .pick-box{
-            display: flex;
-            margin-top:450px;
-            margin-left: 145px;
-            color:  rgb(177, 171, 171);
-            cursor: pointer;
-            font-size: larger;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-left: 35px;
+            margin-top: 50px;
         }
+        .img-box{
+            margin-left: 100px;
+            margin-top: 670px;
+            position: absolute;
+        }
+        .container-destination{
+            margin-top:0px;
+            left:0px;
+            text-align: center;
+          }
         .image{
             width: 200px;
             height: 200px;
         }
         .planet-details{
-            margin-top: -400px;
-            margin-right: -250px;
+            margin-top: 50px;
+            margin-right: 40px;
+            width: 85%;
+            height: 45vh;
+            text-align: center;
         }
         .planet-option ul{
-            margin-left: -30px;
-           
+            margin-left: 0px; 
+                    
+        }
+        .planet-option ul li{
+            margin-inline: 10px;
+            font-size: 22px;
         }
         .planet-name{
-        font-size: 85px;
+        font-size: 95px;
         margin-left: 10px; 
-        /* text-align: center; */
+        
         }
         .planet-content{
             text-align: center;
-            width: 60%;
+            width: 95%;
+            height: 16vh;
+            margin-left: 10px;
             font-size: 18px;
             margin-top: 10px;
-            margin-left: -50px;
             color: rgb(151, 142, 142);
-            line-height: 30px;
+            line-height: 25px;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
         .plan{
             color: rgb(105, 103, 103);
             margin-top: 25px;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            margin-left: 0px;
+            margin-left: -170px;
+        }
+        .planet-line{
+            margin-top: 40px;
         }
         
         .plan2{
             color: rgb(151, 142, 142);
-            margin-top: -35px;
+            margin-top: -50px;
             margin-left: 180px;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         
         }
-        .hrTitan{
-           
-            margin-left: 200px;
+        .hrMars{
+            width: 14%;
+            margin-left: 100px;
+        }
+ 
+         .hrMoon{
+            width: 16%;
+            margin-left: 12px;
         }
         .hrEuropa{
-             margin-left: 135px;
+            width: 20%;
+            margin-left: 180px;
+        } 
+        .hrTitan{
+            width: 16%;
+            margin-left: 285px;
+        }
+        
+    } 
+    @media screen and (max-width: 400px) { 
+        .planet-option ul{
+            margin-left: -10px;                    
+        }
+        .img-box{
+            margin-left: 70px;
+            margin-top: 670px;
+            position: absolute;
+        }
+        .planet-line{
+            margin-top: 80px;
+        }
+
+    }
+    @media screen and (max-width: 370px) { 
+        .planet-option ul{
+            margin-left: -15px;                    
+        }
+        .img-box{
+            margin-left: 70px;
+            margin-top: 670px;
+            position: absolute;
         }
         .hrMars{
-            margin-left: 75px;
+            width: 18%;
+            margin-left: 85px;
         }
-        .hrMoon{
-            margin-left: 20px;
+ 
+         .hrMoon{
+            width: 18%;
+            margin-left: 0px;
         }
-        /* .pick{
-            margin-top: 150px;
-            margin-left:10px;           
-        }   
-        .one{
-            margin-top: -250px;
-            margin-left:-100px ;
-       
-        } */
+        .hrEuropa{
+            width: 25%;
+            margin-left: 165px;
+        } 
+        .hrTitan{
+            width: 18%;
+            margin-left: 275px;
+        }
+        .planet-line{
+            margin-top: 80px;
+        }
+        .img-box{
+            margin-left: 60px;
+            margin-top: 670px;
+            position: absolute;
+        }
     }
-    @media screen and (max-width: 420px) {  
+    /* @media screen and (max-width: 420px) {  
         .destination-phonebackground{
             display: inline-block;
         width: 100%;
@@ -473,7 +532,6 @@
         .planet-name{
             font-size: 70px;
             margin-left: 50px; 
-            /* text-align: center; */
             }
             .planet-option ul{
                 margin-left: -10px;
@@ -499,6 +557,7 @@
            
         }
     }
+    /*
     @media screen and (max-width: 410px) {
         .destination-phonebackground{
             position: fixed;
@@ -527,7 +586,7 @@
         .planet-name{
             font-size: 70px;
             margin-left: 60px; 
-            /* text-align: center; */
+
             }
             .planet-option ul{
                 margin-left: 0px;
@@ -618,7 +677,7 @@
             margin-left: 105px;
             color:  rgb(177, 171, 171);
         }
-    }
+    } */
 
 
 

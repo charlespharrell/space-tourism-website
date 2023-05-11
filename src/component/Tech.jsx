@@ -47,6 +47,7 @@ function Tech() {
     
       <img className='tech-background' src="./background-technology-desktop.jpg" alt="" />
       <img className='tech-mobilebackground' src="./background-technology-mobile.jpg" alt="" />
+      <img className='tech-tabletbackground' src="./background-technology-tablet.jpg" alt="" />
       <div className="pick-box-tech">
               <div className="one-tech">03</div>
               <div className="pick-tech">SPACE LAUNCH 101</div>

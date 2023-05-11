@@ -21,9 +21,13 @@
     font-size: larger;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 } 
+.one-crew{
+    margin-inline: 10px;
+}
 .crew-details{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 40%;
+    height: 40vh;
     margin-left: 140px;
     margin-top: 90px;   
 }
@@ -48,7 +52,8 @@
 }
 .circle-box{
     display: flex;
-    margin-top: 40px;
+    margin-top:70px;
+    margin-left: 140px;
    
 }
 .circle{
@@ -60,13 +65,82 @@
     margin-inline-end: 20px;
 }
 .crew-img-box{
-  
     margin-top: 213px;
     margin-left: 650px;
 }
 .crew-img{
     width: 450px;
     height: 450px;
+}
+@media screen and (max-width:1250px) {
+    .crew-img-box{
+        margin-top: 243px;
+        margin-left: 550px;
+    }
+    .crew-details{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        width: 40%;
+        height: 35vh;
+        margin-left: 140px;
+        margin-top: 70px;   
+    }
+}
+@media screen and (max-width:1150px) {
+    .crew-img-box{
+        margin-top: 243px;
+        margin-left: 450px;
+    }
+}
+@media screen and (max-width:1050px) {
+    .crew-img-box{
+        margin-top: 253px;
+        margin-left: 450px;
+    }
+    .circle-box{
+        display: flex;
+        margin-top:50px;
+        margin-left: 100px;
+       
+    }
+    .crew-details{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        width: 40%;
+        height: 40vh;
+        margin-left: 100px;
+        margin-top: 50px;   
+    }
+}
+@media screen and (max-width:1020px) {
+    .crew-img-box{
+        margin-top: 303px;
+        margin-left: 520px;
+    }
+    .circle-box{
+        display: flex;
+        margin-top:70px;
+        margin-left: 100px;
+       
+    }
+    .crew-details{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        width: 50%;
+        height: 40vh;
+        margin-left: 100px;
+        margin-top: 0px;   
+    }
+}
+@media screen and (max-width:1000px) {
+    .crew-img-box{
+        margin-top: 213px;
+        margin-left: 450px;
+    }
+    .crew-details{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        width: 40%;
+        height: 40vh;
+        margin-left: 30px;
+        margin-top: 90px;   
+    }
 }
 @media screen and (max-width:450px) {
     .crew-mobilebackground{
@@ -83,17 +157,17 @@
     }
     .pick-box-crew{
         display: flex;
-    margin-top:-480px;
-    margin-left: 145px;
-    color:  rgb(177, 171, 171);
-    font-size: larger;
-    
+        margin-top:70px;
+        margin-left: 25px;
+        color:  rgb(177, 171, 171);
+        font-size: larger;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
     .crew-details{
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         width: 100%;
         margin-left: 0px;
-        margin-top: 200px;    
+        margin-top: -450px;    
         text-align: center;
     }
     .crew-bio{
@@ -124,9 +198,17 @@
     }
     .circle-box{
         display: flex;
-        margin-top: -400px;
+        margin-top: -380px;
         margin-left: 150px;       
        
     }
    
+}
+@media screen and (max-width:350px) {
+    .circle-box{
+        display: flex;
+        margin-top: -450px;
+        margin-left: 120px;       
+       
+    }
 }

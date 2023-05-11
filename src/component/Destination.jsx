@@ -60,7 +60,7 @@ function Destination() {
     }
   }
   return (
-    <div>
+    <html>
 
     <div className='container-destination'>
       <img className='destination-background' src="./background-destination-desktop.jpg" alt="" />
@@ -94,7 +94,7 @@ function Destination() {
       </div>
 
     </div>
-    </div>
+    </html>
   )
 }
 

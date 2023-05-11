@@ -1,39 +1,45 @@
+*{
+    margin:0px;
+    box-sizing: border-box;
+    left:0px;
+    top: 0px;
+    padding: 0;
+}
 nav{
-    display: inline-block;
-    margin: 0px;
-    position: absolute;
+    display: block;
+    /* position: absolute; */
     width: 100%; 
-    height: 10vh; 
-    margin-left: -27px;
+    height: 11vh; 
     position: fixed;
+    margin-top: 20px;
 }
 .icon{
-    margin-top: 50px;
+    margin-top: 10px;
     margin-left: 60px;
 }
 .hr{
     position: absolute;
-    margin-top: -30px;
+    margin-top: 40px;
     margin-left: 160px;
     width: 480px;
     height: -1vh;
     filter: opacity(20%);
 }
 .nav-box{
-    position: absolute;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 55%;
     height: 10vh;
     margin-left: 617px;
     background-color: gray ;
     display: flex;
     margin-top: -60px;
-    /* filter: opacity(40%); */
+    filter: opacity(50%)
 }
 .nav-list{
     display: flex;
     list-style: none;
     color: white;
-    margin-left: 30px;
+    margin-left: 130px;
     margin-top: 25px;
 }
 .nav-list li{
@@ -56,66 +62,141 @@ nav{
 .close-icon{
     display: none;
 }
+@media screen and (max-width: 1200px){
+    .nav-list{
+        margin-left: 70px;
+       
+    }
+}
+@media screen and (max-width: 1150px){
+    .nav-list{
+        margin-left: 20px;     
+    }
+    .hr{
+        width: 380px;
+    }
+    .nav-box{
+        width: 60%;
+        margin-left: 460px;
+    }
+    .nav-list{
+        margin-left: 100px;
+    }
+}
 @media screen and (max-width: 1024px){
 .nav-box{
-    width: 54.7%;
-    margin-left: 447px;
+    width: 60%;
+    margin-left: 407px;
 }
 .nav-list{
-    margin-left: 30px;
+    margin-left: 50px;
+}
+.hr{
+    width: 270px;
 }
 }
 @media screen and (max-width: 980px){
     .nav-box{
-        margin-left: 370px;
+        margin-left: 440px;
         width: 55%;
-        margin-top: -60px;
-        height: 9vh;
     }
     .nav-list{
-        margin-left: -20px;
+        margin-left: 20px;
+    }
+    .hr{
+        width: 270px;
+        margin-left: 180px;
+    }
+}
+@media screen and (max-width: 910px){
+    .nav-box{
+        margin-left: 365px;
+        width: 60%;
+    }
+
+    .hr{
+        width: 200px;
+        margin-left: 180px;
     }
 }
 @media screen and (max-width: 880px){
     .nav-box{
-        margin-left: 340px;
-        width: 55%;
-        margin-top: -60px;
-        height: 9vh;
+        margin-left: 395px;
     }
     .nav-list{
-        margin-left: -10px;
+        margin-left: 40px;
+        margin-top: 35px;
     }
     .nav-list li{
-        display: flex;
         margin-inline: 10px;
-        cursor: pointer;
-        text-decoration: none;
+    }
+    .hr{
+        display: none;
     }
 
 }
-@media screen and (max-width: 768px){
-.nav-box{
-    margin-left: 300px;
-    background-color: rgb(1, 1, 36);
-    width: 60%;
-    margin-top: -72px;
-    height: 15vh;
+@media screen and (max-width: 830px){
+
+    .nav-box{
+        margin-left: 330px;
+        width: 60%;
+    }
+    .nav-list{
+        margin-left: 40px;
+    }
+    .nav-list li{
+        margin-inline: 10px;
+    }
 }
-.hr{
-    display: none;
-   }
-   .icon{
-    margin-top: 20px;
-   }
+@media screen and (max-width: 768px){
+   
+    nav{
+        height: 11vh; 
+        top: 0;
+    }
+.nav-box{
+    margin-left: 270px;
+    background-color: rgb(94, 104, 136);
+    width: 65%;
+    filter: opacity(100%)
+}
    .nav-list{
-    margin-left: -30px;
+    margin-left: 30px;
+    margin-top: 35px;
    }
    .nav-list li{
-    margin-top: 0px;
     font-size: large;
 } 
 
+@media screen and (max-width: 720px){
+    .nav-box{
+        margin-left: 215px;
+        background-color: rgb(94, 104, 136);
+        width: 70%;
+        filter: opacity(100%)
+    }
+}
+
+}
+@media screen and (max-width: 660px){
+    .nav-list{
+        margin-left: 10px;
+        margin-top: 35px;
+       }
+}
+@media screen and (max-width: 620px){
+    .nav-box{
+        height: 7vh;
+        
+    }
+    .nav-list{
+        margin-left: 0px;
+    }
+    .nav-list li{
+        
+        margin-inline: 5px;
+        margin-top: -10px;
+    } 
 }
 @media screen and (max-width: 500px){
     nav{
@@ -125,8 +206,6 @@ nav{
         width: 100%; 
         height: 10vh; 
         margin-left: -27px;
-     
-        /* position: fixed; */
     }
     .nav-box{
         width: 80%;
@@ -136,34 +215,46 @@ nav{
     .nav-list li{
         margin-inline: 10px;
         margin-left: 0px;
-
     }
     .hr{
      display: none;
     }
 }
 @media screen and (max-width: 450px){
+    *{
+        margin:0px;
+        box-sizing: border-box;
+        left:0px;
+        top: 0px;
+        padding: 0;
+    }
+    nav{
+        height: 4vh; 
+        top: 0;
+        display: block;
+        position: fixed;
+    }
     .nav-box{display: none;}
 
     .hamburger{
         display: inline-block;
-        margin-left: 320px; 
+        margin-left: 350px; 
         width: 10px;
         height: 1vh; 
         padding: 20px ; 
+        padding-right: 30px;
+        padding-bottom: 30px;
         justify-content: space-around;
-        margin-top: 0px;
+        margin-top: 20px;
         position: fixed;
-        /* background-color: blue; */
     }
     .ham-icon{
-        width: 100px;
-        height: 100px;
         justify-content: space-around;
         margin-left: -5px;
+        margin-top: -5px;
     } 
     .icon{
-        margin-top: 10px;
+        margin-top:20px;
         margin-left: 40px;
         width: 50px;
         height: 50px;
@@ -175,7 +266,6 @@ nav{
         position: relative;
         width: 100%; 
         height: 10vh; 
-        /* background-color: rgb(226, 43, 217); */
         z-index: 1;
     } 
     .ham-icon-hidden{
@@ -187,26 +277,32 @@ nav{
     }
     .close-icon{
        display: inline-block;
+       justify-content: space-around;
+       margin-left: -5px;
+       margin-top: -5px;
     }
-    .dropdown-hidden{
+    /* .dropdown-hidden{
         display: none;
-    }
-    .dropdown{
+    } */
+     /* .dropdown{ 
+        display: inline-block;
         width: 50%;
-        height: 30vh;
+        height: 35vh;
         background-color: black;
         border: 1px solid none;
-        border-top: none;
         filter: opacity(80%);
-        display: inline-block;
         position: fixed;
-        margin-top: 70px;
+        margin-top: 95px;
         margin-left: 36px;
-        z-index: -1;
+    }  */
+    .nav-lists{
+        list-style: none;
+        margin-top: 20px;
+        margin-left: 30px;
     }
     .nav-lists .Links{
         color: white;
-        line-height: 50px;
+        line-height: 60px;
         text-decoration: none;
         list-style: none;
     }
@@ -247,7 +343,7 @@ nav{
         margin-left: 250px;
     }
     .dropdown{
-        margin-left: 155px;
+        margin-left: 175px;
         width: 50%;
     }
 }
